@@ -8,7 +8,7 @@ mp.events.addCommand("addSkimmer", (player) => {
 mp.events.addCommand("addMoney", (player) => {
   player.setVariable("money", (parseFloat(player.getVariable("money")) | 0) + 1500);
 });
-
+/** Телепорт к банкомату */
 mp.events.addCommand("atm", (player, fulltext) => {
   let atm = parseInt(fulltext);
   if (atm != undefined || atm != null || atm != NaN) {
